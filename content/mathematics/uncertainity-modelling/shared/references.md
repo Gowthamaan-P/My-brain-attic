@@ -1,0 +1,17 @@
+01. https://gregorygundersen.com/blog/
+02. https://math.stackexchange.com/questions/1767877/in-laymans-terms-what-is-the-difference-between-a-model-and-a-distribution?noredirect=1&lq=1
+03. https://learning.edx.org/course/course-v1:MITx+6.431x+1T2024/home
+04. https://stats.libretexts.org/Bookshelves
+05. https://stats.stackexchange.com/questions/175027/what-is-the-difference-between-sample-space-and-population
+06. https://stats.stackexchange.com/questions/269/what-is-the-difference-between-a-population-and-a-sample
+07. https://math.stackexchange.com/questions/1660038/populations-and-sample-spaces
+08. https://math.stackexchange.com/questions/2776085/what-is-the-difference-between-sample-space-and-event-space
+09. https://www.probabilitycourse.com/
+10. https://github.com/ayushi-b/Random_Phenomena_by_Babatunde_Ogunnaike
+11. https://online.stat.psu.edu/statprogram/graduate-programs
+12. https://www.statlect.com/
+13. https://statproofbook.github.io/I/ToC
+14. https://www.youtube.com/playlist?list=PLunj3DISs8C8jjV8bem4YkzF-E2YggTWV
+15. https://www.statisticshowto.com/
+16. http://prob140.org/
+17. https://projects.iq.harvard.edu/stat110/about
