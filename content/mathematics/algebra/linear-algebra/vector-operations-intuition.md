@@ -1,8 +1,8 @@
 ---
-title: Vectors
-weight: 12
+title: Vectors Operations - An Intuition
+weight: 20
 math: true
-next: linear-transformation
+next: matrix
 cascade:
   type: docs
 sidebar:
@@ -66,10 +66,6 @@ $\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} + \begin
 
 We will delve deep into vector multiplication after seeing Linear Transformations. Traditionally, vector multiplication is introduced very early on in a linear algebra course, but to get a full understanding of the role of vector multiplication, a strong intuition on linear transformation is really required. So, we will skip vector multiplication for now.
 
-### Scalar-Vector addition
-
-Scalar-Vector addition is also called as `broadcasting`.
-
 ### Scalar-Vector multiplication
 
 Scalar-Vector multiplication is also called as `scaling`. If we multiply a vector $\vec{v}$ by a scalar $a$, the resulting vector is a scaled version of the vector $\vec{v}$. In general, the multiplication of a scalar and a vector is defined as,
@@ -89,5 +85,14 @@ If we multiply by $-1$, the vector will get flipped around. If you multiply −1
 ![Flipping and Strectching a vector](/images/linear-alegbra/vectors/flipping_and_streching_a_vector.svg)
 
 Here, scaling is `either streching or squishing` and a `optional flipping` of the direction of a vector.
+
+### Scalar-Vector addition
+
+Scalar-Vector addition is also called as `broadcasting`. If we add a scalar $a$ to a vector $\vec{v}$, the resulting vector is a translated and scaled version of the vector $\vec{v}$. In general, the addition of a scalar and a vector is defined as,
+
+$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} + a = \begin{bmatrix}a+x_1 \\\\ a+x_2 \\\\ . \\\\ . \\\\ . \\\\ a+x_n\end{bmatrix}$
+
+For example, if we add a scalar $2$ to the vector $v = \begin{bmatrix} 1 \\\\ 2 \end{bmatrix}$, the resultant vector will be,
+$v = \begin{bmatrix} 1+2 \\\\ 2+2 \end{bmatrix} = \begin{bmatrix} 3 \\\\ 4 \end{bmatrix}$
 
 </div>

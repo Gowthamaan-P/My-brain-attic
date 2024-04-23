@@ -1,7 +1,7 @@
 ---
 title: Opening Review
 weight: 11
-next: vectors
+next: vector
 math: true
 cascade:
   type: docs

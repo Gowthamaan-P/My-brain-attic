@@ -1,7 +1,7 @@
 ---
 title: Linear Transformation
-weight: 13
-next: next
+weight: 20
+next: vector-operations-intuition
 cascade:
   type: docs
 sidebar:
@@ -10,7 +10,5 @@ sidebar:
 
 <br>
 <div style="text-align: justify;">
-
-contents
 
 </div>

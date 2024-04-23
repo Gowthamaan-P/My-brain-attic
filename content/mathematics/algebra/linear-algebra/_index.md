@@ -31,7 +31,9 @@ Linear algebra is also used in most sciences and fields of engineering, because 
 
 1 - [Linear alegbra - Wikipedia](https://en.wikipedia.org/wiki/Linear_algebra)
 
-2 - [Essence of Linear Algebra by 3Blue1Brown - YouTube Playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+2 - [Technion - Algebra 1M by Dr.Aviv Censor](https://www.youtube.com/playlist?list=PLW3u28VuDAHJNrf3JCgT0GG_rjFVz0-j9)
+
+3 - [Essence of Linear Algebra by 3Blue1Brown - YouTube Playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 ## Credits
 
