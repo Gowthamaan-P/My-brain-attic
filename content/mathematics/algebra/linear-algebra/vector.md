@@ -32,7 +32,7 @@ As stated earlier, a scalar couldn't express a complex process. So, we use a vec
 
 Vector addition and subtraction is an element-wise operation. Addition of two vectors of length $n$ can be defined as,
 
-$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} + \begin{bmatrix}y_1 \\\\ y_2 \\\\ . \\\\ . \\\\ . \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1 + y_1 \\\\ x_2 + y_2 \\\\ . \\\\ . \\\\ . \\\\ x_n + y_n\end{bmatrix}$$
+$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} + \begin{bmatrix}y_1 \\\\ y_2 \\\\ \vdots \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1 + y_1 \\\\ x_2 + y_2 \\\\ \vdots \\\\ x_n + y_n\end{bmatrix}$$
 
 Consider two vectors, $v = \begin{bmatrix}1 \\\\ 2\end{bmatrix}$ and $w = \begin{bmatrix}3 \\\\ -1\end{bmatrix}$,
 
@@ -40,7 +40,7 @@ $v + w = \begin{bmatrix}1 \\\\ 2\end{bmatrix} + \begin{bmatrix}3 \\\\ -1\end{bma
 
 `The length of the vectors should be equal for vector addition and subtraction`. Vector subtraction also follows the same principles. Subtraction of two vectors of length $n$ can be defined as,
 
-$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} - \begin{bmatrix}y_1 \\\\ y_2 \\\\ . \\\\ . \\\\ . \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1 - y_1 \\\\ x_2 - y_2 \\\\ . \\\\ . \\\\ . \\\\ x_n - y_n\end{bmatrix}$$
+$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} - \begin{bmatrix}y_1 \\\\ y_2 \\\\ \vdots \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1 - y_1 \\\\ x_2 - y_2 \\\\ \vdots \\\\ x_n - y_n\end{bmatrix}$$
 
 ### Vector multiplication
 
@@ -77,7 +77,7 @@ Cross product is defined for vectors with dimension $n\geq 3$. In the further no
 
 Hadamard product between two vectors $\vec{x}$ and $\vec{y}$ is denoted by $$ and defined as,
 
-$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} \odot \begin{bmatrix}y_1 \\\\ y_2 \\\\ . \\\\ . \\\\ . \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1y_1 \\\\ x_2y_2 \\\\ . \\\\ . \\\\ . \\\\ x_ny_n\end{bmatrix}$$
+$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} \odot \begin{bmatrix}y_1 \\\\ y_2 \\\\ \vdots \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1y_1 \\\\ x_2y_2 \\\\ \vdots \\\\ x_ny_n\end{bmatrix}$$
 
 A vector hadamrd product is basically element wise multiplication. For example, the hadamard product of $\vec{v}$ and $\vec{w}$ is,
 
@@ -89,7 +89,7 @@ $\vec{v} \odot \vec{w} = \begin{bmatrix}1 \\\\ 2\end{bmatrix} \odot \begin{bmatr
 
 Addition of a scalar and a vector is defined as,
 
-$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} + a = \begin{bmatrix}a+x_1 \\\\ a+x_2 \\\\ . \\\\ . \\\\ . \\\\ a+x_n\end{bmatrix}$$
+$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} + a = \begin{bmatrix}a+x_1 \\\\ a+x_2 \\\\ \vdots \\\\ a+x_n\end{bmatrix}$$
 
 For example, if we add a scalar $2$ to the vector $\vec{v}$,
 
@@ -99,7 +99,7 @@ $\vec{v} + 2 = \begin{bmatrix} 1+2 \\\\ 2+2 \end{bmatrix} = \begin{bmatrix} 3 \\
 
 Multiplication of a scalar and a vector is defined as,
 
-$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} \times a = \begin{bmatrix}ax_1 \\\\ ax_2 \\\\ . \\\\ . \\\\ . \\\\ ax_n\end{bmatrix}$$
+$$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} \times a = \begin{bmatrix}ax_1 \\\\ ax_2 \\\\ \vdots \\\\ ax_n\end{bmatrix}$$
 
 For example, if we multiply a vector $\vec{v}$ by $2$,
 

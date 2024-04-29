@@ -60,7 +60,7 @@ From the above we can observe that,
 
 **Objective**: Suppose we have a span (i.e) the subspace spanned by a set of vectors $\lbrace v_1, v_2, \dots, v_k \rbrace$. Now a pick a vector $x$ and verify whether it belongs to the subspace.
 
-Let us do few examples and generalize this idea.
+Let us do an examples and generalize this idea.
 
 > Let $u_1 = \begin{bmatrix} -3 \\\\ 1 \\\\-1 \end{bmatrix}$, $u_2 = \begin{bmatrix} 5 \\\\ -2 \\\\1 \end{bmatrix}$. Determine if $v = \begin{bmatrix} 1 \\\\ -1 \\\\ 1 \end{bmatrix}$ is in $W = \text{span}\lbrace u_1, u_2 \rbrace.$
 

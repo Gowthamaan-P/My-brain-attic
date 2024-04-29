@@ -1,8 +1,8 @@
 ---
 title: Vectors Operations - An Intuition
-weight: 20
+weight: 24
 math: true
-next: matrix
+next: matrix-operations-intuition
 cascade:
   type: docs
 sidebar:
@@ -12,23 +12,9 @@ sidebar:
 <br>
 <div style="text-align: justify;">
 
-Vectors are the basic building block of Linear algebra. There are different definitions for a vector and intuitions about a vector. So, what is a vector?
+We have seen different vector operations earlier. As we assumed earlier that a vector to be an arrow whose tail is at the origin of the co-ordinate system and head at the point of the vector. Vectors are denoted as $\vec{z}$ with a arrow in the head or as an (row or column) array. So, every operation that we studied earlier has a geometric representation. This note will give intuition behind what happens geometrically during these operations.
 
-> - In Physics, a vector is a quantity with both magnitude and direction. Eg. Displacement
-> - In Computer scince, a vector is a ordered list of numbers. (Note: Order of the elements does matter here).
-> - In Mathematics, a vector is a point in a n-dimensional space.
-
-To get a better understanding physically and mathematically, we assume a vector to be an arrow whose tail is at the origin of the co-ordinate system and head at the point of the vector. Vectors are denoted as $\vec{z}$ with a arrow in the head or as an (row or column) array. For example, $z = \begin{bmatrix}-3 & 2 \end{bmatrix}$, $z = \begin{bmatrix} -3 \\\\ 2 \end{bmatrix}$.
-
-![Visualizing a vector](/images/linear-alegbra/vectors/visualizing_a_vector.svg)
-
-So, what all these mean is that z is a point in space (Cartesian co-ordinate system or Cartesian space), whose tail is at the origin (0,0) and the tip is at (-3,2). To distinguish vectors from points, the convention is to write this n-numbers vertically or horizontally with square brackets around them. For better visulization and understanding, we stick to two and three dimensional vectors in this notes but vectors can be of any length in general.
-
-## Basic Operations
-
-As stated earlier, a scalar couldn't express a complex process. So, we use a vector. Similar to scalar, there are many mathematical operations defined for a vector.
-
-### Vector addition
+## Vector addition
 
 What happens when we add two vectors? Let's consider two vectors $\vec{v}$ and $\vec{w}$.
 
@@ -56,21 +42,11 @@ Gathering all the steps, what we did effectively is that,
 
 $v + w = \begin{bmatrix}1 \\\\ 2\end{bmatrix} + \begin{bmatrix}3 \\\\ -1\end{bmatrix} = \begin{bmatrix}1+3 \\\\ 2-1\end{bmatrix} = \begin{bmatrix}4 \\\\ 1\end{bmatrix}$
 
-So, in general addition of two vectors of length $n$ can be defined as,
-
-$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} + \begin{bmatrix}y_1 \\\\ y_2 \\\\ . \\\\ . \\\\ . \\\\ y_n\end{bmatrix} = \begin{bmatrix}x_1 + y_1 \\\\ x_2 + y_2 \\\\ . \\\\ . \\\\ . \\\\ x_n + y_n\end{bmatrix}$
-
-`The length of the vectors should be equal for vector addition`.
-
-### Vector multiplication
-
-We will delve deep into vector multiplication after seeing Linear Transformations. Traditionally, vector multiplication is introduced very early on in a linear algebra course, but to get a full understanding of the role of vector multiplication, a strong intuition on linear transformation is really required. So, we will skip vector multiplication for now.
-
-### Scalar-Vector multiplication
+## Scalar-Vector multiplication
 
 Scalar-Vector multiplication is also called as `scaling`. If we multiply a vector $\vec{v}$ by a scalar $a$, the resulting vector is a scaled version of the vector $\vec{v}$. In general, the multiplication of a scalar and a vector is defined as,
 
-$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} \times a = \begin{bmatrix}ax_1 \\\\ ax_2 \\\\ . \\\\ . \\\\ . \\\\ ax_n\end{bmatrix}$
+$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} \times a = \begin{bmatrix}ax_1 \\\\ ax_2 \\\\ \vdots \\\\ ax_n\end{bmatrix}$
 
 For example, if we multiply a vector $\vec{v}$ by $2$, it will stretch out that vector so that it is two times its original length.
 
@@ -86,13 +62,78 @@ If we multiply by $-1$, the vector will get flipped around. If you multiply −1
 
 Here, scaling is `either streching or squishing` and a `optional flipping` of the direction of a vector.
 
-### Scalar-Vector addition
+## Scalar-Vector addition
 
 Scalar-Vector addition is also called as `broadcasting`. If we add a scalar $a$ to a vector $\vec{v}$, the resulting vector is a translated and scaled version of the vector $\vec{v}$. In general, the addition of a scalar and a vector is defined as,
 
-$\begin{bmatrix}x_1 \\\\ x_2 \\\\ . \\\\ . \\\\ . \\\\ x_n\end{bmatrix} + a = \begin{bmatrix}a+x_1 \\\\ a+x_2 \\\\ . \\\\ . \\\\ . \\\\ a+x_n\end{bmatrix}$
+$\begin{bmatrix}x_1 \\\\ x_2 \\\\ \vdots \\\\ x_n\end{bmatrix} + a = \begin{bmatrix}a+x_1 \\\\ a+x_2 \\\\ \vdots \\\\ a+x_n\end{bmatrix}$
 
 For example, if we add a scalar $2$ to the vector $v = \begin{bmatrix} 1 \\\\ 2 \end{bmatrix}$, the resultant vector will be,
 $v = \begin{bmatrix} 1+2 \\\\ 2+2 \end{bmatrix} = \begin{bmatrix} 3 \\\\ 4 \end{bmatrix}$
+
+## Linear Combination and Span
+
+Any time when we scale and add two vectors it's called a "linear combination" of those two vectors.
+
+![Linear Combination](/images/linear-algebra/vector-operations/linear_combination.svg)
+
+Where does the word "linear" come from here? What does this have to do with lines? Well, when you multiply a scalar by a vector, it changes the magnitude of that vector. Multiplying every real number by the vector produces an infinite line that passes through the origin and the point defined by the vector.
+
+![Linear Combination and Lines](/images/linear-algebra/vector-operations/linear_combination_and_lines.svg)
+
+So a linear combination of two vectors is a method of combining these two lines. For most pairs of vectors, if you let both scalars range freely and consider every possible vector you could get, you will be able to reach every possible point on the plane. Every two-dimensional vector is within your grasp. Basis vectors tend to span the whole space.
+
+<style>
+    video.center {
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<video width="640" height="360" class="center" controls>
+  <source src="/videos/linear-algebra/vector-operations/vectors_r2_span.mp4" type="video/mp4">
+</video>
+
+However, if the two vectors happen to line up, the lines produced by the scalar multiplication will be the same line, so adding them together can't yield a vector outside of that line.
+
+<video width="640" height="360" class="center" controls>
+  <source src="/videos/linear-algebra/vector-operations/span_lineup.mp4" type="video/mp4">
+</video>
+
+There's a third possibility too: Both vectors could be the zero vector, in which case there will be no lines and the linear combination just be stuck at the origin.
+
+### Vector multiplication
+
+There are three different most commonly used vector products. Every product serves a different purpose. They are,
+
+- Dot product
+- Cross product
+- Hadamard product
+
+### Dot Product
+
+Dot product between two vectors $\vec{v}$ and $\vec{w}$ is denoted by $\cdot$ and defined as,
+$$\vec{v} \cdot \vec{w} = \sum_{i=1}^{n} v_iw_i$$
+
+But the above operation has a very good geometric representation. To think about the dot products of two vectors, imagine projecting $w$ onto the line that passes through the origin and the tip of $v$. Multiply the length of this projection by the length of $v$ and you have the dot product of $v$ and $w$.
+
+![Dot Product - Case One](/images/linear-algebra/vector-operations/dot_product.svg)
+
+When the projection of $w$ is pointing in the opposite direction from $v$, the dot product will actually be negative. When they are perpendicular to each other, the projection of one onto the other is the zero vector.
+
+![Dot Product - Case Two](/images/linear-algebra/vector-operations/dot_product_opposite.svg)
+
+Notice that the sign of the dot product will tells you how much two vectors $v$ and $w$ align or the angle between them.
+
+> - $v \dot w > 0$ - When they point in similar directions (i.e) the angle between them is less than $90\degree$
+> - $v \dot w = 0$ - When they are perpendicular (i.e) the angle between them is $90\degree$
+> - $v \dot w < 0$ - When they point in opposite directions (i.e) the angle between them is greater than $90\degree$
+
+![Dot Product - Sign](/images/linear-algebra/vector-operations/dot_product_sign.svg)
+
+If the tip of $w$ lies in the green region the dot product is positive, if it lies in the red region the dot product is negative, and if it lies on the blue line perpendicular $v$ the dot product is zero.
+
+This geometric interpretation of dot product is very asymmetric, in that it treats the two vectors very differently.
 
 </div>

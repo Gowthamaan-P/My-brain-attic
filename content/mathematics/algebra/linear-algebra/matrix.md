@@ -18,7 +18,7 @@ A matrix is a table or chart or array of elements arranged in rows and columns. 
 
 In general, a matrix is denoted using a upper case letter and defined as,
 
-$A = \begin{bmatrix}a_{11}&a_{12}&a_{13}&.&.&.&a_{1n} \\\\ a_{21}&a_{22}&a_{23}&.&.&.&a_{2n} \\\\ .&.&.&.& & &. \\\\ .&.&.&&.&&.  \\\\ .&.&.&&&.&. \\\\ a_{m1}&a_{m2}&a_{m3}&.&.&.&a_{mn}\end{bmatrix} = \begin{pmatrix}a_{11}&a_{12}&a_{13}&.&.&.&a_{1n} \\\\ a_{21}&a_{22}&a_{23}&.&.&.&a_{2n} \\\\ .&.&.&.& & &. \\\\ .&.&.&&.&&.  \\\\ .&.&.&&&.&. \\\\ a_{m1}&a_{m2}&a_{m3}&.&.&.&a_{mn}\end{pmatrix}$
+$A = \begin{bmatrix}a_{11}&a_{12}&a_{13}&\dots &a_{1n} \\\\ a_{21}&a_{22}&a_{23}&\dots&a_{2n} \\\\ \vdots&\vdots&\vdots&\ddots&\vdots \\\\ a_{m1}&a_{m2}&a_{m3}&\dots&a_{mn}\end{bmatrix} = \begin{pmatrix}a_{11}&a_{12}&a_{13}&\dots &a_{1n} \\\\ a_{21}&a_{22}&a_{23}&\dots&a_{2n} \\\\ \vdots&\vdots&\vdots&\ddots&\vdots \\\\ a_{m1}&a_{m2}&a_{m3}&\dots&a_{mn}\end{pmatrix}$
 
 **Size of the matrix**: The size of a matrix is defined by the number of rows and columns and denoted by $m \times n$, where $m$ is number of rows and $n$ is the number of columns. There is no limit to the numbers of rows and columns.
 
@@ -177,8 +177,39 @@ For example, the transpose of the matrix $V$ is $V^T = \begin{bmatrix}3&2 \\\\ 2
 
 ### Vector-Matrix addition and subtraction
 
-## Determinant of a matrix
+## Determinant
 
-## Inverse of a matrix
+We going to see the qualitative aspect of determinant of a matrix. For how to compute the determinant, please watch this [video](https://youtu.be/_Se_ZiFNVzU?si=n063fxtnngnNPTgE). Determinant is only defined for a square matrix. The determinant of a matrix is obtained by eliminating the $i^{th}$ row and the $j^{th}$ column of $A$ called the $ij^{th}$ minor of $A$ denoted by $M_{ij}$.
+
+> The determinant of a matrix $A_{n\times n}$ denoted by $|A|$ is defined as,
+> $$ |A| = (-1)^{n+1} a\_{1n} M\_{1n}$$
+
+**Properties**
+
+> - |A^T| = A
+> - If one the rows/columns of a matrix $A$ is zero, $|A| = 0$
+> - Determinant of a triangular matrix is the product of the main-diagonal entries
+> - If we exchange or swap two rows/columns, the sign of the determinant changes
+> - If two rows/columns of a matrix $A$ is equal, $|A| = 0$
+> - A common factor of a row/column can be taken out of the determinant. $|\alpha A| = \alpha^n |A|$
+> - If one row or column is a multiple of another, the determinant is zero
+> - If we add a scalar multiple of a row/column to another row/column, the determinant doesn't change
+> - Determinant of the identity matrix is 1
+> - $|AB| = |A||B|$
+
+## Inverse
+
+The following discussion will hold only for a square matrix. So, how do we define the inverse of a matrix or determine if a matrix is invertible?
+
+> A square matrix $A$ is invertible if there exists a matrix $A^{-1}$ such that $AA^{-1} = I$
+
+**Properties**
+
+> - If $A^{-1}$ exists, $AA^{-1} = A^{-1}A = I$. Matrix multiplication is not commutative except in this case.
+> - If $A$ is invertible, $A^{-1}$ is unique to $A$
+> - If two matrices $A$ and $B$ are invertible, $(AB)^{-1} = B^{-1}A^{-1}$
+> - If $A$ is invertible, $(A^T)^{-1} = (A^{-1})^T$
+
+We will see how to find the inverse of a matrix in the later notes.
 
 </div>

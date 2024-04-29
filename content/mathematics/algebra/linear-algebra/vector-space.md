@@ -38,7 +38,7 @@ A vector space is also called a Linear space.
 The most common vector space that we come across throughout this notes is the space $\mathbb{R}^n$. The space $\mathbb{R}^n$ is a collection of $n$ dimensional vectors whose elements belong to the field $\mathbb{R}$.
 
 $$
-\mathbb{R}^n = \Bigg\lbrace \begin{pmatrix}a_1 \\\\ a_2 \\\\ . \\\\ . \\\\ a_n\end{pmatrix} \mid  a_i \in \mathbb{R} \Bigg\rbrace
+\mathbb{R}^n = \Bigg\lbrace \begin{pmatrix}a_1 \\\\ a_2 \\\\ \vdots \\\\ a_n\end{pmatrix} \mid  a_i \in \mathbb{R} \Bigg\rbrace
 $$
 
 Interestingly, $\mathbb{R}^2$ and $\mathbb{R}^3$ have a very good geometric realization. Remember that, we consider a vector to be an arrow whose tail is at the origin of the co-ordinate system and head at the point of the vector.

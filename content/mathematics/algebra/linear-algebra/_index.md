@@ -1,4 +1,5 @@
 ---
+linkTitle: LinearAlgebra
 title: Linear Algebra
 weight: 2
 next: opening-review
